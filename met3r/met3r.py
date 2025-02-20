@@ -27,7 +27,7 @@ from pytorch3d.renderer import (
 import sys
 import os
 import os.path as path
-HERE_PATH = os.getcwd()
+HERE_PATH = os.path.dirname(os.path.abspath(__file__))
 MASt3R_REPO_PATH = path.normpath(path.join(HERE_PATH, '../mast3r'))
 DUSt3R_REPO_PATH = path.normpath(path.join(HERE_PATH, '../mast3r/dust3r'))
 MASt3R_LIB_PATH = path.join(MASt3R_REPO_PATH, 'mast3r')
